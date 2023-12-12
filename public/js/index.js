@@ -1,4 +1,5 @@
-const id = window.location.search.split("?").pop();
+let params = (new URL(document.location)).searchParams;
+let id = params.get("id");
 $(document).ready(function () {
     console.log(id);
     $.ajax({

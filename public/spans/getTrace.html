@@ -5,12 +5,24 @@
                 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
                 crossorigin="anonymous">
         </script>
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="../css/index.css">
         <title>Spaner</title>
     </head>
     <body>
-        hello world!!!
+        <div class = 'header'>
+            <a href="../index.html">Главная</a>
+            <a href="../index.html">Главная</a>
+            <a href="../index.html">Главная</a>
+            <a href="../index.html">Главная</a>
+            <a href="../index.html">Главная</a>
+        </div>
+        <div class="panel">
+            <p>Введите TraceID</p>
+            <input type="text" id="TraceID">
+            <input type="button" value="Вывести спаны" onclick="getSpans()">
+        </div>
+        <div class = 'starter'></div>
     </body>
 </html>

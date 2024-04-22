@@ -15,7 +15,7 @@ module.exports.RecordSpan = function (newSpan, callback) {
 }
 
 module.exports.GetSpans = function (id, callback){
-    Spans.find({'req.traceID':id}).then(function (result){
+    Spans.find({'traceID':Number(id)}).then(function (result){
         callback(null, result);
     }).catch(function (err) {
         callback(err, null);

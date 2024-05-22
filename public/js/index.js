@@ -24,15 +24,13 @@ function getSpans(){
                         a[i] = a[min];
                         a[min] = mid;
                     }
-                    console.log(a);
                 }
                 let min=data[0].timeStart,max=min;
                 for (let i = 0; i < data.length; i++) {
-                    if (min>data[0].timeStart) min = data[i].timeStart; 
-                    if (max<data[0].timeEnd) max = data[i].timeEnd;
+                    if (min>data[i].timeStart) min = data[i].timeStart; 
+                    if (max<data[i].timeEnd) max = data[i].timeEnd;
                 }
                 let length = max - min;
-                
                 for (let i = 0; i < data.length; i++) {
                     let j=a[i];
                     $(".starter").append("<div class='block"+i+"'></div>");

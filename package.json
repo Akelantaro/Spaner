@@ -8,9 +8,10 @@
     "start": "node index"
   },
   "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "*",
     "express": "*",
-    "mongoose": "*",
-    "body-parser": "*"
+    "mongoose": "*"
   },
   "author": "",
   "license": "ISC"
